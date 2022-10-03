@@ -1,0 +1,69 @@
+package metadatos;
+import java.util.*;
+public class EjemplosMetodos {
+
+	public static void main(String[] args) {
+
+		Scanner es =new Scanner(System.in);
+		
+		MetodoA(); //Metodo A no rqquiere datos de entrada y no devuelve valor
+		
+		MetodoB(3.2,5.0,8); //MetodoB requiere datos de entrada y no devuelve ningun valor
+		double a=9.3,b=7.5;
+		int c=5;
+		MetodoB(a,b,c);
+		
+		System.out.println("Ingrese el valor de a: ");
+		a=es.nextDouble();
+		System.out.println("Ingrese el valor de b: ");
+		b=es.nextDouble();
+		System.out.println("Ingrese el valor de c: ");
+		c=es.nextInt();
+		MetodoB(a,b,c);
+		
+		double resultado =MetodoC();//Metodo c no requiere datos de entrada pero si devuelve un valor
+		
+		//Se tiene que almacenar en una variable presente en el metodo main para mostrar los datos del metodo
+		System.out.println("El resultado en MetodoC es: "+resultado);
+		
+		System.out.println("El resultado en MetodoC es: "+MetodoC());
+		
+		MetodoD(1.0,2.0,5.0,9);
+
+		
+	}//Fin del Main
+	
+	//Definicion de metodos
+	
+	private static void MetodoA() { //Metodo A no rqquiere datos de entrada y no devuelve valor
+		int valorA= 7, valorB=8;
+		
+		System.out.println("La suma de "+valorA +" mas "+valorB+" es :"+ (valorA+valorB));
+		
+	}
+	
+	private static void MetodoB(double varA, double varB, int varC) { ////MetodoB requiere datos de entrada y no devuelve ningun valor
+		
+		double resultado=(varA+varB)/(1+varC);
+		System.out.println("El resultado es: "+resultado);
+	}
+	
+	private static double MetodoC() { ////Metodo c no requiere datos de entrada pero si devuelve un valor
+	
+	double varDouble1=1.0,varDouble2=2.0,varDouble3=5.0;
+			int  varInt2=9;
+			double resultado= (1+(varDouble1*varDouble2)- (varDouble3/varInt2));
+			
+			return resultado;
+			
+			
+	}
+	
+	private static double MetodoD(double varDouble1, double varDouble2, double varDouble3, int varInt2) { ////MetodoD requiere datos de entrada y si devuelve un valor double
+		
+		
+				double resultado= (1+(varDouble1*varDouble2)- (varDouble3/varInt2));
+				
+				return resultado;
+}
+	}

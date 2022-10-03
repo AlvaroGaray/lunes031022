@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\AJGH\Introduccion a la Programacion\lunes031022\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1372677264.index
+1920999360.index

@@ -1,0 +1,41 @@
+package metadatos;
+import java.util.*;
+public class EjemplosMetodos {
+
+	public static void main(String[] args) {
+
+		Scanner es =new Scanner(System.in);
+		
+		MetodoA(); //Metodo A no rqquiere datos de entrada y no devuelve valor
+		
+		MetodoB(3.2,5.0,8); //MetodoB requiere datos de entrada y no devuelve ningun valor
+		double a=9.3,b=7.5;
+		int c=5;
+		MetodoB(a,b,c);
+		
+		System.out.println("Ingrese el valor de a: ");
+		a=es.nextDouble();
+		System.out.println("Ingrese el valor de b: ");
+		b=es.nextDouble();
+		System.out.println("Ingrese el valor de c: ");
+		c=es.nextInt();
+		MetodoB(a,b,c);
+		
+	}//Fin del Main
+	
+	//Definicion de metodos
+	
+	private static void MetodoA() {
+		int valorA= 7, valorB=8;
+		
+		System.out.println("La suma de "+valorA +" mas "+valorB+" es :"+ (valorA+valorB));
+		
+	}
+	
+	private static void MetodoB(double varA, double varB, int varC) {
+		
+		double resultado=(varA+varB)/(1+varC);
+		System.out.println("El resultado es: "+resultado);
+	}
+
+}

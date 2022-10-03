@@ -1,0 +1,21 @@
+package metadatos;
+
+public class EjemplosMetodos {
+
+	public static void main(String[] args) {
+
+		
+		MetodoA();
+		
+	}//Fin del Main
+	
+	//Definicion de metodos
+	
+	private static void MetodoA() {
+		int valorA= 7, valorB=8;
+		
+		System.out.println("La suma de "+valorA +" mas el valor "+valorB+" es :"+ (valorA+valorB));
+		
+	}
+
+}
